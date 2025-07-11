@@ -141,7 +141,7 @@ layers:
   - F9
   - F10
   - F11
-  - F12
+  - {t: F12, type: held}
   - '&SuperL'
   - ↹
   - $$mdi:apple-keyboard-option$$
@@ -168,7 +168,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -227,7 +227,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - H
   - J
@@ -254,7 +254,7 @@ layers:
   - '&AltTab'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
