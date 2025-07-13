@@ -99,7 +99,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - ↹
+  - {t: ↹, h: LSHIFT}
   - '4'
   - '5'
   - '6'
