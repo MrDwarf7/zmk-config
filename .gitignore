@@ -1,6 +1,8 @@
 # zmk
 zmk/
 
+**/*/.other/*
+
 # sketchybar
 sketchybar/dotfiles/
 sketchybar/dotfiles
