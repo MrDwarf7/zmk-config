@@ -36,6 +36,7 @@
 extra_modules_dir=${PWD}
 extra_modules= -DZMK_EXTRA_MODULES="/boards"
 config=${PWD}/config
+# nice_mount=/Volumes/NICENANO
 nice_mount=/run/media/dwarf/NICENANO
 zmk_image=zmkfirmware/zmk-dev-arm:3.5
 nice=nice_nano_v2
@@ -205,12 +206,19 @@ shell:
 nice_corne_flash_left:
 	@ printf "Waiting for ${nice} bootloader to appear at ${nice_mount}.."
 	@ while [ ! -d ${nice_mount} ]; do sleep 1; printf "."; done; printf "\n"
-	cp -av firmware/nice_corne_left.uf2 ${nice_mount}
+	cp -av firmware/nice_corne_left_view.uf2 ${nice_mount}
+	# cp -av firmware/nice_corne_left.uf2 ${nice_mount}
 
 nice_corne_flash_right:
 	@ printf "Waiting for ${nice} bootloader to appear at ${nice_mount}.."
 	@ while [ ! -d ${nice_mount} ]; do sleep 1; printf "."; done; printf "\n"
-	cp -av firmware/nice_corne_right.uf2 ${nice_mount}
+	# cp -av firmware/nice_corne_right.uf2 ${nice_mount}
+	cp -av firmware/nice_corne_right_view.uf2 ${nice_mount}
+
+nice_corne_flash_reset:
+	@ printf "Waiting for ${nice} bootloader to appear at ${nice_mount}.."
+	@ while [ ! -d ${nice_mount} ]; do sleep 1; printf "."; done; printf "\n"
+	cp -av firmware/nice_settings_reset.uf2 ${nice_mount}
 
 # puchi_corne_flash_left:
 # 	@ printf "Waiting for ${puchi} bootloader to appear at ${puchi_mount}.."
